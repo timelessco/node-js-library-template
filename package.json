@@ -34,7 +34,6 @@
   ],
   "scripts": {
     "build": "tsup",
-    "build:visualize": "rimraf lib && microbundle src/index.js --target node --sourcemap false -f modern,esm,cjs --visualize",
     "check": "pnpm lint:check && pnpm format:check",
     "commit": "gacp",
     "dev": "NODE_OPTIONS=\"--experimental-specifier-resolution=node\" nodemon demo/main.js",
