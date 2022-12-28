@@ -1,9 +1,8 @@
 # Introduction
 
-This project is a frontend library package built using Vite. Vite is a
-lightweight, fast, and modern build tool for modern JavaScript applications,
-designed for performance and ease of use. It allows you to focus on writing code
-and not on the build process.
+This project is a frontend library package built using tsup. tsup is a modern
+build tool for modern node applications, designed for performance and ease of
+use. It allows you to focus on writing code and not on the build process.
 
 ## Setup
 
@@ -27,13 +26,10 @@ pnpm install
 pnpm run dev
 ```
 
-This will start a development server at `http://localhost:5173`, and you can
-view the application in your browser. Any changes you make to the code will be
-automatically reloaded in the browser.
+This will start a nodemon watch server, and you can view the changes in your
+cli. Any changes you make to the code will be automatically reloaded in the cli.
 
-This will generate a production-ready build in the `dist` folder.
-
-## Build Library
+## Build
 
 To build the project for production, run the following command:
 
