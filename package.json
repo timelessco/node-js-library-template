@@ -1,0 +1,113 @@
+{
+  "name": "node-js-library-template",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Template for production ready node js library",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timelessco/node-js-library-template.git"
+  },
+  "homepage": "https://github.com/timelessco/node-js-library-template#readme",
+  "bugs": {
+    "url": "https://github.com/timelessco/node-js-library-template/issues"
+  },
+  "author": "Timeless <hello@timeless.co> (https://timeless.co/)",
+  "license": "MIT",
+  "private": true,
+  "main": "./lib/node-js-library-template.cjs",
+  "module": "./lib/node-js-library-template.js",
+  "exports": {
+    ".": {
+      "import": "./lib/node-js-library-template.js",
+      "require": "./lib/node-js-library-template.cjs"
+    }
+  },
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "js",
+    "library",
+    "production",
+    "template",
+    "node"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "build:visualize": "rimraf lib && microbundle src/index.js --target node --sourcemap false -f modern,esm,cjs --visualize",
+    "check": "pnpm lint:check && pnpm csslint:check && pnpm format:check",
+    "commit": "gacp",
+    "csslint:check": "stylelint '**/*.css' --cache --color --ignore-path .prettierignore -f verbose",
+    "csslint:fix": "stylelint '**/*.css' --fix --cache --color --ignore-path .prettierignore -f verbose",
+    "dev": "concurrently \"tsup --watch\" \"NODE_OPTIONS=\"--experimental-specifier-resolution=node\" nodemon demo/main.js \"",
+    "fix": "pnpm lint:fix &&  pnpm csslint:fix && pnpm format:fix",
+    "format:check": "prettier -l --cache \"./**/*.{html,css,js,cjs,jsx,ts,cts,tsx,md,json}\"",
+    "format:fix": "prettier --write --cache --check \"./**/*.{html,css,js,cjs,jsx,ts,cts,tsx,md,json}\"",
+    "lint:check": "eslint --cache --color --ext .js,.cjs,.jsx,.ts,.cts,.tsx .",
+    "lint:fix": "eslint --cache --color --ext .js,.cjs,.jsx,.ts,.cts,.tsx . --fix",
+    "postinstall": "husky install",
+    "postpublish": "pinst --enable",
+    "prepublishOnly": "pinst --disable",
+    "release": "release-it",
+    "release:check": "release-it --dry-run",
+    "test": "echo \"no test specified\" && exit 0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.7",
+    "@babel/eslint-parser": "^7.19.1",
+    "@babel/preset-env": "^7.20.2",
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
+    "@ianvs/prettier-plugin-sort-imports": "^3.7.1",
+    "@release-it/conventional-changelog": "^5.1.1",
+    "concurrently": "^7.6.0",
+    "eslint": "^8.30.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "gacp": "^3.0.3",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.1.0",
+    "nodemon": "^2.0.20",
+    "pinst": "^3.0.0",
+    "prettier": "^2.8.1",
+    "prettier-plugin-pkg": "^0.17.1",
+    "release-it": "^15.5.1",
+    "rimraf": "^3.0.2",
+    "tsup": "^6.5.0"
+  },
+  "sideEffects": false,
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "last 2 versions",
+      "Firefox ESR",
+      "not dead"
+    ],
+    "development": [
+      "last 2 versions",
+      "not dead"
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "gacp": {
+    "add": false,
+    "push": false,
+    "emoji": "emoji",
+    "editor": false
+  },
+  "lint-staged": {
+    "**/*.{js,cjs,jsx,ts,cts,tsx}": [
+      "pnpm lint:fix"
+    ],
+    "**/*.{html,css,js,cjs,jsx,ts,cts,tsx,md,json}": [
+      "pnpm format:fix"
+    ]
+  },
+  "source": "./src/index.js"
+}
