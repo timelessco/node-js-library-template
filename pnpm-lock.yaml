@@ -8,7 +8,6 @@ specifiers:
   '@commitlint/config-conventional': ^17.3.0
   '@ianvs/prettier-plugin-sort-imports': ^3.7.1
   '@release-it/conventional-changelog': ^5.1.1
-  concurrently: ^7.6.0
   eslint: ^8.30.0
   eslint-config-airbnb-base: ^15.0.0
   eslint-config-prettier: ^8.5.0
@@ -33,7 +32,6 @@ devDependencies:
   '@commitlint/config-conventional': 17.3.0
   '@ianvs/prettier-plugin-sort-imports': 3.7.1_prettier@2.8.1
   '@release-it/conventional-changelog': 5.1.1_release-it@15.5.1
-  concurrently: 7.6.0
   eslint: 8.30.0
   eslint-config-airbnb-base: 15.0.0_2lbwmhbr7bncddqbzzpg77o75m
   eslint-config-prettier: 8.5.0_eslint@8.30.0
@@ -2494,22 +2492,6 @@ packages:
       typedarray: 0.0.6
     dev: true
 
-  /concurrently/7.6.0:
-    resolution: {integrity: sha512-BKtRgvcJGeZ4XttiDiNcFiRlxoAeZOseqUvyYRUp/Vtd+9p1ULmeoSqGsDA+2ivdeDFpqrJvGvmI+StKfKl5hw==}
-    engines: {node: ^12.20.0 || ^14.13.0 || >=16.0.0}
-    hasBin: true
-    dependencies:
-      chalk: 4.1.2
-      date-fns: 2.29.3
-      lodash: 4.17.21
-      rxjs: 7.8.0
-      shell-quote: 1.7.4
-      spawn-command: 0.0.2-1
-      supports-color: 8.1.1
-      tree-kill: 1.2.2
-      yargs: 17.6.2
-    dev: true
-
   /config-chain/1.1.13:
     resolution: {integrity: sha512-qj+f8APARXHrM0hraqXYb2/bOVSV4PvJQlNZ/DVj0QrmNM2q2euizkeuVckQ57J+W0mRH6Hvi+k50M4Jul2VRQ==}
     dependencies:
@@ -2806,11 +2788,6 @@ packages:
   /data-uri-to-buffer/4.0.0:
     resolution: {integrity: sha512-Vr3mLBA8qWmcuschSLAOogKgQ/Jwxulv3RNE4FXnYWRGujzrRWQI4m12fQqRkwX06C0KanhLr4hK+GydchZsaA==}
     engines: {node: '>= 12'}
-    dev: true
-
-  /date-fns/2.29.3:
-    resolution: {integrity: sha512-dDCnyH2WnnKusqvZZ6+jA1O51Ibt8ZMRNkDZdyAyK4YfbDwa/cEmuztzG5pk6hqlp9aSBPYcjOlktquahGwGeA==}
-    engines: {node: '>=0.11'}
     dev: true
 
   /dateformat/3.0.3:
@@ -6170,10 +6147,6 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /shell-quote/1.7.4:
-    resolution: {integrity: sha512-8o/QEhSSRb1a5i7TFR0iM4G16Z0vYB2OQVs4G3aAFXjn3T6yEx8AZxy1PgDF7I00LZHYA3WxaSYIf5e5sAX8Rw==}
-    dev: true
-
   /shelljs/0.8.5:
     resolution: {integrity: sha512-TiwcRcrkhHvbrZbnRcFYMLl30Dfov3HKqzp5tO5b4pt6G/SezKcYhmDg15zXVBswHmctSAQKznqNW2LO5tTDow==}
     engines: {node: '>=4'}
@@ -6277,10 +6250,6 @@ packages:
     engines: {node: '>= 8'}
     dependencies:
       whatwg-url: 7.1.0
-    dev: true
-
-  /spawn-command/0.0.2-1:
-    resolution: {integrity: sha512-n98l9E2RMSJ9ON1AKisHzz7V42VDiBQGY6PB1BwRglz99wpVsSuGzQ+jOi6lFXBGVTCrRpltvjm+/XA+tpeJrg==}
     dev: true
 
   /spdx-correct/3.1.1:
@@ -6446,13 +6415,6 @@ packages:
   /supports-color/7.2.0:
     resolution: {integrity: sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==}
     engines: {node: '>=8'}
-    dependencies:
-      has-flag: 4.0.0
-    dev: true
-
-  /supports-color/8.1.1:
-    resolution: {integrity: sha512-MpUEN2OodtUzxvKQl72cUF7RQ5EiHsGvSsVG0ia9c5RbWGL2CI4C7EpPS8UTBIplnlzZiNuV56w+FuNxy3ty2Q==}
-    engines: {node: '>=10'}
     dependencies:
       has-flag: 4.0.0
     dev: true

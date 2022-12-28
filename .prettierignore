@@ -68,7 +68,7 @@ yarn.lock
 pnpm-lock.yaml
 
 # local files
-dist
+lib
 CHANGELOG.md
 stats.html
 
