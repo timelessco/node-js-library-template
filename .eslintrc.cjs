@@ -1,6 +1,7 @@
 /** @type {import('eslint').Linter.Config} */
 const config = {
   env: {
+    es6: true,
     node: true,
   },
   parser: "@babel/eslint-parser",
