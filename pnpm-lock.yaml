@@ -21,7 +21,7 @@ specifiers:
   prettier: ^2.8.3
   prettier-plugin-pkg: ^0.17.1
   release-it: ^15.6.0
-  rimraf: ^4.0.5
+  rimraf: ^4.0.6
   tsup: ^6.5.0
 
 devDependencies:
@@ -45,7 +45,7 @@ devDependencies:
   prettier: 2.8.3
   prettier-plugin-pkg: 0.17.1_prettier@2.8.3
   release-it: 15.6.0
-  rimraf: 4.0.5
+  rimraf: 4.0.6
   tsup: 6.5.0_z6wznmtyb6ovnulj6iujpct7um
 
 packages:
@@ -6020,8 +6020,8 @@ packages:
       glob: 7.2.3
     dev: true
 
-  /rimraf/4.0.5:
-    resolution: {integrity: sha512-3gf/WdsBM+ZkuPb76MpXSxNKt00QQ3PdXqDCCBOsHgcoBs8DAhXbqtrGQUAkhxHgXYWzXxuaOsN4s21+at5fBw==}
+  /rimraf/4.0.6:
+    resolution: {integrity: sha512-O6zMt2OF2Vuxtm6V4wdBd9t21WPqJeXrHQiFBL4BFHnPMk0MBYaUhcJ4/u64Cp+PpM9UgVajhtidh8nD6fz1FA==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
