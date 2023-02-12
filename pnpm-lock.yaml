@@ -22,7 +22,7 @@ specifiers:
   prettier-plugin-pkg: ^0.17.1
   release-it: ^15.6.0
   rimraf: ^4.1.2
-  tsup: ^6.6.0
+  tsup: ^6.6.2
 
 devDependencies:
   '@babel/core': 7.20.12
@@ -46,7 +46,7 @@ devDependencies:
   prettier-plugin-pkg: 0.17.1_prettier@2.8.4
   release-it: 15.6.0
   rimraf: 4.1.2
-  tsup: 6.6.0_6qtx7vkbdhwvdm4crzlegk4mvi
+  tsup: 6.6.2_6qtx7vkbdhwvdm4crzlegk4mvi
 
 packages:
 
@@ -6563,8 +6563,8 @@ packages:
     resolution: {integrity: sha512-336iVw3rtn2BUK7ORdIAHTyxHGRIHVReokCR3XjbckJMK7ms8FysBfhLR8IXnAgy7T0PTPNBWKiH514FOW/WSg==}
     dev: true
 
-  /tsup/6.6.0_6qtx7vkbdhwvdm4crzlegk4mvi:
-    resolution: {integrity: sha512-HxZE7Hj5yNxLFftCXdcJ+Jsax8dI4oKb0bt8fIvd1g/W0FZ46sU1pFBVo15WpOERFcEMH7Hykey/Q+hKO4s9RQ==}
+  /tsup/6.6.2_6qtx7vkbdhwvdm4crzlegk4mvi:
+    resolution: {integrity: sha512-+yQ6SI4rVtp1+YpcYOePumJLEVQ896CDNRt9dJ2L/DeMnLf1+FTOCVw5eioLBH0xLdHgogO9NQ6vPNF5MfkSJw==}
     engines: {node: '>=14'}
     hasBin: true
     peerDependencies:

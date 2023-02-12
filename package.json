@@ -71,7 +71,7 @@
     "prettier-plugin-pkg": "^0.17.1",
     "release-it": "^15.6.0",
     "rimraf": "^4.1.2",
-    "tsup": "^6.6.0"
+    "tsup": "^6.6.2"
   },
   "sideEffects": false,
   "browserslist": {
