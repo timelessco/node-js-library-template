@@ -20,7 +20,7 @@ specifiers:
   pinst: ^3.0.0
   prettier: ^2.8.4
   prettier-plugin-pkg: ^0.17.1
-  release-it: ^15.6.1
+  release-it: ^15.7.0
   rimraf: ^4.1.2
   tsup: ^6.6.3
 
@@ -31,7 +31,7 @@ devDependencies:
   '@commitlint/cli': 17.4.4
   '@commitlint/config-conventional': 17.4.4
   '@ianvs/prettier-plugin-sort-imports': 3.7.1_prettier@2.8.4
-  '@release-it/conventional-changelog': 5.1.1_release-it@15.6.1
+  '@release-it/conventional-changelog': 5.1.1_release-it@15.7.0
   eslint: 8.35.0
   eslint-config-airbnb-base: 15.0.0_yckic57kx266ph64dhq6ozvb54
   eslint-config-prettier: 8.6.0_eslint@8.35.0
@@ -44,7 +44,7 @@ devDependencies:
   pinst: 3.0.0
   prettier: 2.8.4
   prettier-plugin-pkg: 0.17.1_prettier@2.8.4
-  release-it: 15.6.1
+  release-it: 15.7.0
   rimraf: 4.1.2
   tsup: 6.6.3_6qtx7vkbdhwvdm4crzlegk4mvi
 
@@ -1902,7 +1902,7 @@ packages:
       config-chain: 1.1.13
     dev: true
 
-  /@release-it/conventional-changelog/5.1.1_release-it@15.6.1:
+  /@release-it/conventional-changelog/5.1.1_release-it@15.7.0:
     resolution: {integrity: sha512-QtbDBe36dQfzexAfDYrbLPvd5Cb5bMWmLcjcGhCOWBss7fe1/gCjoxDULVz+7N7G5Nu2UMeBwHcUp/w8RDh5VQ==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -1911,7 +1911,7 @@ packages:
       concat-stream: 2.0.0
       conventional-changelog: 3.1.25
       conventional-recommended-bump: 6.1.0
-      release-it: 15.6.1
+      release-it: 15.7.0
       semver: 7.3.8
     dev: true
 
@@ -5918,8 +5918,8 @@ packages:
       jsesc: 0.5.0
     dev: true
 
-  /release-it/15.6.1:
-    resolution: {integrity: sha512-oPJKP2yxMcA/TaGFnS5uB0spDSPiDXXd1yGKSSMQ2xutyiSs8X+1UahlJCF/xHnp01QwUqRv0fpsV9MFr2GKmQ==}
+  /release-it/15.7.0:
+    resolution: {integrity: sha512-/ajllmzQNuxXCrPySwx+MiR/nBHp8H+lTn42QFw9YlFPJQpLFwgMjCOFTB4hhuavi9jMbDpWcTPFy31QJgzNcw==}
     engines: {node: '>=14.9'}
     hasBin: true
     dependencies:
