@@ -69,8 +69,8 @@
     "pinst": "^3.0.0",
     "prettier": "^2.8.4",
     "prettier-plugin-pkg": "^0.17.1",
-    "release-it": "^15.7.0",
-    "rimraf": "^4.3.0",
+    "release-it": "^15.8.0",
+    "rimraf": "^4.4.0",
     "tsup": "^6.6.3"
   },
   "sideEffects": false,
