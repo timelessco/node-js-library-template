@@ -34,14 +34,14 @@
   ],
   "scripts": {
     "build": "tsup",
-    "check": "pnpm lint:check && pnpm format:check",
     "commit": "gacp",
-    "dev": "NODE_OPTIONS=\"--experimental-specifier-resolution=node\" nodemon demo/main.js",
-    "fix": "pnpm lint:fix && pnpm format:fix",
-    "format:check": "prettier -l --cache \"./**/*.{html,css,js,cjs,jsx,ts,cts,tsx,md,json}\"",
-    "format:fix": "prettier --write --cache --check \"./**/*.{html,css,js,cjs,jsx,ts,cts,tsx,md,json}\"",
-    "lint:check": "eslint --cache --color --ext .js,.cjs,.jsx,.ts,.cts,.tsx .",
-    "lint:fix": "eslint --cache --color --ext .js,.cjs,.jsx,.ts,.cts,.tsx . --fix",
+    "dev": "nodemon demo/main.js",
+    "format": "npm-run-all format:*",
+    "format:eslint": "eslint --cache --color --ext .js,.cjs,.jsx,.ts,.cts,.tsx . --fix",
+    "format:prettier": "prettier --write --cache --cache-location=.prettiercache --list-different \"./**/*.{html,css,js,cjs,jsx,ts,cts,tsx,md,json}\"",
+    "lint": "npm-run-all lint:*",
+    "lint:eslint": "eslint --cache --color --ext .js,.cjs,.jsx,.ts,.cts,.tsx .",
+    "lint:prettier": "prettier --check --cache --cache-location=.prettiercache \"./**/*.{html,css,js,cjs,jsx,ts,cts,tsx,md,json}\"",
     "postinstall": "husky install",
     "postpublish": "pinst --enable",
     "prepublishOnly": "pinst --disable",
@@ -50,28 +50,23 @@
     "test": "echo \"no test specified\" && exit 0"
   },
   "devDependencies": {
-    "@babel/core": "^7.21.0",
-    "@babel/eslint-parser": "^7.19.1",
-    "@babel/preset-env": "^7.20.2",
-    "@commitlint/cli": "^17.4.4",
-    "@commitlint/config-conventional": "^17.4.4",
-    "@ianvs/prettier-plugin-sort-imports": "^3.7.1",
-    "@release-it/conventional-changelog": "^5.1.1",
-    "eslint": "^8.36.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-prettier": "^8.7.0",
-    "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-prettier": "^4.2.1",
-    "gacp": "^3.0.3",
-    "husky": "^8.0.3",
-    "lint-staged": "^13.2.0",
-    "nodemon": "^2.0.21",
-    "pinst": "^3.0.0",
-    "prettier": "^2.8.4",
-    "prettier-plugin-pkg": "^0.17.1",
-    "release-it": "^15.8.0",
-    "rimraf": "^4.4.0",
-    "tsup": "^6.6.3"
+    "@commitlint/cli": "17.4.4",
+    "@commitlint/config-conventional": "17.4.4",
+    "@ianvs/prettier-plugin-sort-imports": "3.7.1",
+    "@release-it/conventional-changelog": "5.1.1",
+    "eslint": "8.36.0",
+    "eslint-config-galex": "4.4.2",
+    "gacp": "3.0.3",
+    "husky": "8.0.3",
+    "lint-staged": "13.2.0",
+    "nodemon": "2.0.21",
+    "npm-run-all": "4.1.5",
+    "pinst": "3.0.0",
+    "prettier": "2.8.4",
+    "prettier-plugin-pkg": "0.17.1",
+    "release-it": "15.8.0",
+    "rimraf": "4.4.0",
+    "tsup": "6.6.3"
   },
   "sideEffects": false,
   "browserslist": {
@@ -99,10 +94,10 @@
   },
   "lint-staged": {
     "**/*.{js,cjs,jsx,ts,cts,tsx}": [
-      "pnpm lint:fix"
+      "pnpm lint:eslint"
     ],
     "**/*.{html,css,js,cjs,jsx,ts,cts,tsx,md,json}": [
-      "pnpm format:fix"
+      "pnpm lint:prettier"
     ]
   },
   "source": "./src/index.js"

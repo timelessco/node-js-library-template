@@ -1,3 +1,4 @@
-import { add } from "../src/index";
+import { add } from "../src/index.js";
 
-console.log("add 1 + 2: ", add(1, 2));
+// eslint-disable-next-line no-console
+console.log("add 1 + 2:", add(1, 2));

@@ -44,10 +44,10 @@ This will generate a production-ready build library in the `lib` folder.
 In addition to the dev and build commands, there may be other commands
 available, such as:
 
-`check`: Run the linters & formatters to check the code for style and syntax
+`lint`: Run the linters & formatters to check the code for style and syntax
 errors.
 
-`fix`: Run the linters & formatters to check the code for style and syntax
+`format`: Run the linters & formatters to check the code for style and syntax
 errors. If any errors are found, they will be fixed automatically.
 
 `test`: Run the test suite for the project.
