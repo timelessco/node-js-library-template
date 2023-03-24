@@ -50,7 +50,7 @@
     "test": "echo \"no test specified\" && exit 0"
   },
   "devDependencies": {
-    "@commitlint/cli": "17.4.4",
+    "@commitlint/cli": "17.5.0",
     "@commitlint/config-conventional": "17.4.4",
     "@ianvs/prettier-plugin-sort-imports": "3.7.2",
     "@release-it/conventional-changelog": "5.1.1",
@@ -64,9 +64,9 @@
     "pinst": "3.0.0",
     "prettier": "2.8.7",
     "prettier-plugin-pkg": "0.17.1",
-    "release-it": "15.8.0",
+    "release-it": "15.9.3",
     "rimraf": "4.4.1",
-    "tsup": "6.6.3"
+    "tsup": "6.7.0"
   },
   "sideEffects": false,
   "browserslist": {
