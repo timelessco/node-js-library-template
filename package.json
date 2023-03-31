@@ -50,7 +50,7 @@
     "test": "echo \"no test specified\" && exit 0"
   },
   "devDependencies": {
-    "@commitlint/cli": "17.5.0",
+    "@commitlint/cli": "17.5.1",
     "@commitlint/config-conventional": "17.4.4",
     "@ianvs/prettier-plugin-sort-imports": "3.7.2",
     "@release-it/conventional-changelog": "5.1.1",
