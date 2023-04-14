@@ -65,7 +65,7 @@
     "prettier": "2.8.7",
     "prettier-plugin-pkg": "0.17.1",
     "release-it": "15.10.1",
-    "rimraf": "4.4.1",
+    "rimraf": "5.0.0",
     "tsup": "6.7.0"
   },
   "sideEffects": false,
