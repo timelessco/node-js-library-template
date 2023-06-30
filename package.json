@@ -50,15 +50,15 @@
     "test": "echo \"no test specified\" && exit 0"
   },
   "devDependencies": {
-    "@commitlint/cli": "17.6.5",
-    "@commitlint/config-conventional": "17.6.5",
+    "@commitlint/cli": "17.6.6",
+    "@commitlint/config-conventional": "17.6.6",
     "@ianvs/prettier-plugin-sort-imports": "4.0.2",
     "@release-it/conventional-changelog": "5.1.1",
     "eslint": "8.43.0",
     "eslint-config-galex": "4.5.2",
     "gacp": "3.0.3",
     "husky": "8.0.3",
-    "lint-staged": "13.2.2",
+    "lint-staged": "13.2.3",
     "nodemon": "2.0.22",
     "npm-run-all": "4.1.5",
     "pinst": "3.0.0",
