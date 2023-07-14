@@ -15,8 +15,8 @@ devDependencies:
     specifier: 4.0.2
     version: 4.0.2(prettier@2.8.8)
   '@release-it/conventional-changelog':
-    specifier: 6.0.0
-    version: 6.0.0(release-it@16.0.0)
+    specifier: 7.0.0
+    version: 7.0.0(release-it@16.0.0)
   eslint:
     specifier: 8.43.0
     version: 8.43.0
@@ -1156,11 +1156,11 @@ packages:
       config-chain: 1.1.13
     dev: true
 
-  /@release-it/conventional-changelog@6.0.0(release-it@16.0.0):
-    resolution: {integrity: sha512-OOiHhDncIFaNVfKJHpNQQkvM1yI5UPvyCtS74d6BDjvqWRu74J4cBGWh8b0owY4k3TTiR2BMKHn1eZ7hrxCnrA==}
-    engines: {node: '>=14'}
+  /@release-it/conventional-changelog@7.0.0(release-it@16.0.0):
+    resolution: {integrity: sha512-DBzyVS6c4g8w+xomCsygkmLeQBUq41Wvzy0vGgbdCLOxYnwI0cDaF6HOLPkrifH1qLa1uJ9i1pYA+hNyHkNanQ==}
+    engines: {node: '>=16'}
     peerDependencies:
-      release-it: ^15.4.1
+      release-it: ^16.0.0
     dependencies:
       concat-stream: 2.0.0
       conventional-changelog: 4.0.0
@@ -1308,7 +1308,7 @@ packages:
       grapheme-splitter: 1.0.4
       ignore: 5.2.4
       natural-compare-lite: 1.4.0
-      semver: 7.5.2
+      semver: 7.5.3
       tsutils: 3.21.0(typescript@5.0.3)
       typescript: 5.0.3
     transitivePeerDependencies:
@@ -1408,7 +1408,7 @@ packages:
       debug: 4.3.4
       globby: 11.1.0
       is-glob: 4.0.3
-      semver: 7.5.2
+      semver: 7.5.3
       tsutils: 3.21.0(typescript@5.0.3)
       typescript: 5.0.3
     transitivePeerDependencies:
@@ -1429,7 +1429,7 @@ packages:
       debug: 4.3.4
       globby: 11.1.0
       is-glob: 4.0.3
-      semver: 7.5.2
+      semver: 7.5.3
       tsutils: 3.21.0(typescript@5.0.3)
       typescript: 5.0.3
     transitivePeerDependencies:
@@ -1450,7 +1450,7 @@ packages:
       '@typescript-eslint/typescript-estree': 5.55.0(typescript@5.0.3)
       eslint: 8.43.0
       eslint-scope: 5.1.1
-      semver: 7.5.2
+      semver: 7.5.3
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -1470,7 +1470,7 @@ packages:
       '@typescript-eslint/typescript-estree': 5.56.0(typescript@5.0.3)
       eslint: 8.43.0
       eslint-scope: 5.1.1
-      semver: 7.5.2
+      semver: 7.5.3
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -3279,7 +3279,7 @@ packages:
       regexp-tree: 0.1.24
       regjsparser: 0.9.1
       safe-regex: 2.1.1
-      semver: 7.5.2
+      semver: 7.5.3
       strip-indent: 3.0.0
     dev: true
 
@@ -5260,7 +5260,7 @@ packages:
     dependencies:
       hosted-git-info: 4.1.0
       is-core-module: 2.11.0
-      semver: 7.5.2
+      semver: 7.5.3
       validate-npm-package-license: 3.0.4
     dev: true
 
@@ -7174,7 +7174,7 @@ packages:
       is-yarn-global: 0.3.0
       latest-version: 5.1.0
       pupa: 2.1.1
-      semver: 7.5.2
+      semver: 7.5.3
       semver-diff: 3.1.1
       xdg-basedir: 4.0.0
     dev: true
